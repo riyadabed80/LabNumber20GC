@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   
+    <style>
+        #map{
+            
+            height: 500px;
+            width: 100%;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative">
+    <link href="StyleSheet.css" rel="stylesheet" />
+    <meta charset="utf-8" />
+
+    <title>Riyad Home</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+
+            <img src="Images/grand_circus.png" alt="logo" class="logo" width="185" height="225">
+            <nav>
+                <ul>
+                    <li><a href="homepage.html">Home</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="Portfolio.html">Portfolio</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+    <section>
+        
+        <div id="body">
+            <p><h1><font size="20" face="arial" color="orange">Developing</font></h1></p>
+            <font size="+8" face="arial" color="white">Riyad has a passion for web development and cyber security.  He loves solving puzzles and looks forward to starting his career and making an immediate impact.</font>
+            <br />
+            <br />
+            <br />
+            <p><h1><font size="20" face="arial" color="orange">Hometown</font></h1></p>
+            <font size="+8" face="arial" color="white"> Riyad hails from Southwest Detroit, commonly known as "Southwest."  This is a lively neighborhood in the heart of Detroit which is home to beautiful murals and great food, including the 2 blocks known as Mexicantown.</font>
+            <div id="map">
+            </div>
+            <script>
+                function initMap() {
+                    var location = { lat: 42.315173, lng: -83.091067 };
+                    var map = new google.maps.Map(document.getElementById("map"), {
+                        zoom: 15,
+                        center: location
+                    });
+                    var marker = new google.maps.Marker({
+                        position: { lat: 42.315173, lng: -83.091067},
+                        map: map
+
+                    }); -YFeHLum0I
+                }
+            </script>
+            <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAK4M3Y9XwB6kptZvJ07GvF2-oWMPdHJN4&callback=initMap">
+
+            </script>
+</div>
+
+        <div class="video-box">
+            <iframe width="960" height="540" src="https://www.youtube.com/watch?v=2p6tNUjgeS4" frameborder="0" allowfullscreen></iframe>
+
+
+            </div>
+
+    </section>
+   
+    
+    <footer>
+        <!--<div class="wrapper">
+        <nav>
+            <ul>
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Portfolio.html">Portfolio</a></li>
+            </ul>
+        </nav>
+    </div>-->
+        <a href="homepage.html">Home</a>
+        <a href="About.html">About</a>
+        <a href="Portfolio.html">Portfolio</a>
+    </footer>
+    </body>
+</html>
